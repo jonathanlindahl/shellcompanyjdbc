@@ -60,7 +60,7 @@ public class ShellRepository
         }
         return shells;
     }
-    // Should not allow for specification of id.
+
     public Shell addShell(Shell shell)
     {
         Connection connection = null;

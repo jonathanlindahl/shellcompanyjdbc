@@ -14,7 +14,7 @@ public class Connector
         return connect();
     }
     
-    private static Object findDriver()
+    private static void findDriver()
             throws
             ClassNotFoundException,
             NoSuchMethodException,
@@ -22,7 +22,7 @@ public class Connector
             InstantiationException,
             InvocationTargetException
     {
-        return Class
+        Class
                 .forName("com.mysql.cj.jdbc.Driver")
                 .getDeclaredConstructor()
                 .newInstance();
@@ -41,7 +41,7 @@ public class Connector
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/shellcompanydb?serverTimezone=UTC",
                     "root",
-                    "fanvadjobbigt");
+                    "");
         } catch (SQLException ex) {
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getSQLState());

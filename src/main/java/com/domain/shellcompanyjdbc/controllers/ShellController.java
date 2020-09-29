@@ -1,7 +1,6 @@
 package com.domain.shellcompanyjdbc.controllers;
 
 import com.domain.shellcompanyjdbc.models.Shell;
-import com.domain.shellcompanyjdbc.repositories.ShellRepository;
 import com.domain.shellcompanyjdbc.services.ShellService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
